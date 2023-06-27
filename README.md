@@ -5,7 +5,8 @@ This assessment consists of 2 parts:
 - Build a simple command line app using the Sunbird AI API.
 
 ## Getting started
-- Clone this repository:
+- Fork this repository to create your own copy. ([More info about forking a repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo))
+- Clone your repository to access it locally: `git clone https://github.com/<your-username>/internship-assessment.git`. (Replace `<your-username>` with your Github username.)
 - Create a python virtual environment: `python -m venv venv`
 - Install the required python packages: `pip install -r requirements.txt` 
 
