@@ -1,8 +1,45 @@
 # Sunbird AI Internship Assessment Exercise
 
-This assessment consists of 3 parts:
-- **Algorithms and Data structures**: The part tests your programming skills and knowledge of various algorithms and data structures.
-- **Web development / Software engineering**: This part tests your knowledge of web development, both backend and frontend.
-- **AI and ML**: This part tests your knowledge of basic machine learning concepts.
+This assessment consists of 2 parts:
+- Programming exercises.
+- Build a simple command line app using the Sunbird AI API.
 
+## Getting started
+- Clone this repository:
+- Create a python virtual environment: `python -m venv venv`
+- Install the required python packages: `pip install -r requirements.txt` 
 
+## Part 1: Programming exercises
+There are 2 programming exercises designed to test your competency with the python programming language. 
+
+You can find the starter code in the `exercises/basics.py` file in this repo.
+
+Run the following command: `pytest`. You will see that all the tests are failing.
+
+Your goal is to implement the 2 functions `collatz` and `distinct_numbers` to make the above failing tests pass.
+
+You can keep running the `pytest` command to see which tests are still failing and fix your code accordingly.
+
+## Part 2: Write a simple python translation script
+Write a simple python script in a file `translate.py` that translates text to-and-from English to 5 local Ugandan languages.
+
+Your script should do the following:
+- Ask the user to choose a source language (English, Luganda, Runyankole, Ateso, Lugbara or Acholi).
+- If the source language is English, ask the user to choose a target language, otherwise set English as the target language.
+- Ask the user for text to translate (should be in the source language chosen).
+- Translate the input text into the target language.
+
+A sample interaction is as follows:
+```
+(your program): Please choose the source language:
+(the user): English
+(your program): Please choose the target language: (one of Luganda, Runyankole, Ateso, Lugbara or Acholi):
+(the user): Luganda
+(your program): Enter the text to translate:
+(the user): How are you?
+(your program): Oli otya?
+```
+
+This will require you to make use of Sunbird's API. You can find a [tutorial](https://github.com/SunbirdAI/sunbird-ai-api/blob/main/tutorial.md) here. 
+
+To use the API, you'll need an access token which will be sent in the email inviting you to this assessment.

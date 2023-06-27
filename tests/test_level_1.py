@@ -1,4 +1,4 @@
-from ds_and_algos.level_1 import collatz, distinct_numbers
+from exercises.basics import collatz, distinct_numbers
 from constants import collatz_1m, collatz_556
 
 def test_collatz_1():
