@@ -8,12 +8,16 @@ This assessment consists of 2 parts:
 - Fork this repository to create your own copy. ([More info about forking a repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo))
 - Clone your repository to access it locally: `git clone https://github.com/<your-username>/internship-assessment.git`. (Replace `<your-username>` with your Github username.)
 - Create a python virtual environment: `python -m venv venv`
-- Install the required python packages: `pip install -r requirements.txt` 
+- Activate the virtual environment: 
+  - Linux/Mac: `source venv/bin/activate`
+  - Windows: `venv\Scripts\activate.bat`
+- Install the required python packages: `pip install -r requirements.txt`
+- Run the command `pytest`. (The tests should be failing, it's your task to make them pass. See below for instructions)
 
 ## Part 1: Programming exercises
 There are 2 programming exercises designed to test your competency with the python programming language. 
 
-You can find the starter code in the `exercises/basics.py` file in this repo.
+You can find the starter code and task descriptions in the `exercises/basics.py` file in this repo.
 
 Run the following command: `pytest`. You will see that all the tests are failing.
 
