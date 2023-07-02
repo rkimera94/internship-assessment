@@ -12,7 +12,20 @@ def collatz(n: int) -> List[int]:
     For example, if n = 3, the sequence of values is: 3 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
     So, your function would return: [3, 10, 5, 16, 8, 4, 2, 1]
     """
-    pass
+
+    if type(n) != int:
+        raise TypeError('n must be an integer')
+    if n < 1:
+        raise TypeError('n must be a positive number')
+    result = [n]
+    while n > 1:
+        if n % 2 == 0:
+            result.append(n//2)
+            n = n//2
+        else:
+            result.append((n*3)+1)
+            n = (n*3)+1
+    return result
 
 
 def distinct_numbers(numbers: List[int]) -> int:
@@ -22,3 +35,6 @@ def distinct_numbers(numbers: List[int]) -> int:
     E.g if numbers = [2, 3, 2, 2, 3], then the answer is 2 since there are only 2 unique numbers: 2 and 3.
     """
     pass
+
+
+print(collatz(3))
